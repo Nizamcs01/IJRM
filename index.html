@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Academic journal homepage with article metadata and downloadable papers.">
+  <title>IJRM Journal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topline"><div class="container topline-inner"><span>Peer-reviewed academic research</span><span>ISSN: 0976-318X [Print]</span></div></div>
+  <header class="site-header">
+    <div class="container brand-row">
+      <a class="brand" href="index.html" aria-label="Journal homepage">
+          <span><strong>IJRM</strong><small>Journal of Interdisciplinary Research</small></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">☰ <span class="sr-only">Toggle navigation</span></button>
+      <nav id="mainNav" class="main-nav" aria-label="Main navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="#current-issue">Current Issue</a>
+        <a href="#archives">Archives</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">ACADEMIC JOURNAL</p>
+          <h1>Research that connects <em>ideas</em> and disciplines.</h1>
+          <p class="hero-description">Discover scholarly articles, explore interdisciplinary research, and access article metadata from one clear, easy-to-navigate journal website.</p>
+          <div class="hero-actions"><a class="button button-gold" href="#current-issue">Explore current issue <span aria-hidden="true">→</span></a><a class="text-link" href="#about">About the journal</a></div>
+        </div>
+        <div class="hero-card" aria-label="Journal information">
+          <div class="hero-card-top"><span class="dot"></span> JOURNAL INFORMATION</div>
+          <div class="metric"><span>Publication model</span><strong>Peer-reviewed</strong></div>
+          <div class="metric"><span>Research access</span><strong>Article-level pages</strong></div>
+          <div class="metric"><span>Publication archive</span><strong>Issues &amp; papers</strong></div>
+          <p class="hero-note">Replace these sample details with the journal's verified information before publishing.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container content-layout" id="current-issue">
+      <div class="main-column">
+        <div class="section-heading">
+          <div><p class="eyebrow">LATEST PUBLICATION</p><h2>Current Issue</h2></div>
+          <span class="issue-label" id="issueLabel">Volume 1 · Issue 1 · Demo</span>
+        </div>
+        <div class="issue-intro"><div class="issue-icon">✦</div><div><strong>Explore the latest research</strong><p>Select any article title to open its dedicated landing page with abstract, authors, keywords, DOI and PDF access.</p></div></div>
+        <div class="toolbar">
+          <label class="search-box"><span aria-hidden="true">⌕</span><input id="articleSearch" type="search" placeholder="Search title, author or keyword…" aria-label="Search articles"></label>
+          <select id="categoryFilter" aria-label="Filter articles by section"><option value="all">All sections</option></select>
+        </div>
+        <div id="articleList" class="article-list" aria-live="polite"></div>
+        <div id="emptyState" class="empty-state" hidden>No articles match your search. Try another title or keyword.</div>
+        <div class="archive-callout" id="archives"><div><strong>Looking for an earlier paper?</strong><p>Browse the archive by volume and issue. Add your real archive links here.</p></div><a class="text-link" href="#archives">View archives <span aria-hidden="true">→</span></a></div>
+      </div>
+
+      <aside class="sidebar">
+        <section class="side-card" id="about"><p class="eyebrow">ABOUT</p><h3>About the Journal</h3><p>Use this section for the journal's official aims and scope, subject areas, peer-review policy and intended readership.</p><a href="#contact" class="side-link">Journal information →</a></section>
+        <section class="side-card"><p class="eyebrow">FOR AUTHORS</p><h3>Publish with us</h3><p>Provide submission guidelines, manuscript requirements, publication ethics and editorial contact information.</p><a href="#contact" class="side-link">Submission information →</a></section>
+        <section class="side-card side-card-blue"><div class="side-icon">DOI</div><h3>Article-level metadata</h3><p>Each published paper should have a stable landing page. Add a DOI only after it has been assigned and registered.</p></section>
+        <section class="side-card" id="contact"><p class="eyebrow">CONTACT</p><h3>Editorial Office</h3><p><strong>Email:</strong> <a href="mailto:editor@example.com">editor@example.com</a></p><p class="small-muted">Replace this sample email with the official journal contact.</p></section>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><div><a class="footer-brand" href="index.html">IJRM</a><p>Journal of Interdisciplinary Research</p></div><div class="footer-meta"><span>ISSN: 0976-318X [Print]</span><span>© <span id="year"></span> Journal. All rights reserved.</span></div></div></footer>
+  <script src="app.js"></script>
+</body>
+</html>
