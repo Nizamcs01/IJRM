@@ -53,7 +53,7 @@
     // app.js exposes the sample metadata for this static demo.
     const articleId = location.pathname.split("/").pop().replace(/\\.html$/, "");
     const article = sampleArticles.find(item => item.id === articleId) || sampleArticles[0];
-    document.title = article.title + " | VEETHIKA";
+    document.title = article.title + " | IJRM";
     document.getElementById("section").textContent = article.section.toUpperCase();
     document.getElementById("title").textContent = article.title;
     document.getElementById("authors").textContent = article.authors;
