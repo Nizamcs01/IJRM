@@ -32,7 +32,7 @@ const sampleArticles = [
   },
   {
     id: "sample-article-3",
-    title: "A Review of Emerging Approaches in Data-Driven Research",
+    title: "PERCEPTION OF GEN Z TOWARDS SUSTAINABLE CONSUMPTION AND LIFESTYLE CHOICES IN INDIA",
     authors: "D. Scholar, E. Researcher",
     affiliations: "Centre for Data Science, Example University",
     section: "Review Article",
